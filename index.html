@@ -1,0 +1,377 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deportivo Morin Jr</title>
+  <link rel="stylesheet" href="fut7.css" />
+</head>
+<body>  <div class="container"><header>
+  <p id="contadorVisitas"></p>
+  <h1>Deportivo Morin Jr - Fut7/Fut11</h1>
+  <p id="reloj"></p>
+  <p>Color representativo: Azul & Naranja | <span id="totalJugadores"></span></p>
+  <img src="morinjr.png" alt="Deportivo Morin Jr" style="height: 120px;" />
+</header>
+<div class="alerta">
+  ⚽ Próximos partidos:
+
+  <ul class="lista-alerta">
+    <li>Tuzos Calero vs Deportivo Morin Jr | Viernes 24/04/2026 5-4 17:30 PM</li>
+    <li>Agustín Melgar vs Deportivo Morin Jr | Sábado 25/04/2026 - 13:00 PM</li>
+    <li>Deportivo Morin Jr vs Inter Fausto Dávila | Sábado 25/04/2026 2-0 10:00 AM</li>
+  </ul>
+</div>
+
+<nav>
+  <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+  <a href="#" onclick="mostrarSeccion('jugadores')">Jugadores</a>
+  <a href="#" onclick="mostrarSeccion('partidos')">Partidos</a>
+  <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
+  <a href="#" onclick="mostrarSeccion('galeria')">Galería</a>
+</nav>
+
+<main>
+  <div class="recuadro">
+    <section id="inicio" class="active">
+      <h2>Información del club.</h2>
+      <p><strong>Nombre del equipo:</strong> Deportivo Morin Jr</p>
+      <p><strong>Comunidad:</strong> Coatzintla, Ruiz Cortines</p>
+      <p><strong>Colores representativos:</strong> Azul & Naranja</p>
+      <p><strong>Fecha de fundación:</strong> 28 de marzo de 2025</p>
+      <p><strong>Número de jugadores:</strong> 15</p>
+      <p><strong>Entrenador:</strong> Jhon Eider Cortes</p>
+      <p><strong>Historia:</strong> En proceso</p>
+      <p><strong>Meta actual:</strong> Ganar el campeonato FlagFut S17 & Liga de fútbol juvenil de Poza Rica, AC.</p>
+    </section>
+  </div>
+</main>
+
+<section id="jugadores">
+  <h2>Jugadores</h2>
+
+<input type="text" id="buscador" placeholder="Buscar jugador..." onkeyup="filtrarJugadores()">
+
+  <!-- Infantil A -->
+  <h3 class="titulo-categoria" onclick="toggleCategoria('f')">Cuerpo Técnico ▼</h3>
+  <div id="cat-f" class="contenedor-jugadores categoria">
+
+  <div class="credencial">
+    <img src="dt.png" alt="N/A" />
+      <div class="info">
+        <h3>Jhon Eider Cortes</h3>
+        <p>Edad: N/A</p>
+        <p class="dt">Posición: Director Técnico.</p>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Infantil A -->
+  <h3 class="titulo-categoria" onclick="toggleCategoria('a')">Infantil A ▼</h3>
+  <div id="cat-a" class="contenedor-jugadores categoria">
+
+  <div class="credencial">
+      <img src="portero.png" alt="N/A" />
+      <div class="info">
+        <h3>N/A</h3>
+        <p>Edad: N/A</p>
+        <p>Número: N/A</p>
+        <p class="portero">Posición: Portero</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 0</p>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Infantil B -->
+  <h3 class="titulo-categoria" onclick="toggleCategoria('b')">Infantil B ▼</h3>
+  <div id="cat-b" class="contenedor-jugadores categoria">
+
+  <div class="credencial">
+      <img src="portero.png" alt="N/A" />
+      <div class="info">
+        <h3>N/A</h3>
+        <p>Edad: N/A</p>
+        <p>Número: N/A</p>
+        <p class="portero">Posición: Portero</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 0</p>
+    </div>
+  </div>
+
+
+</div>
+
+  <!-- Juvenil A -->
+  <h3 class="titulo-categoria" onclick="toggleCategoria('c')">Juvenil A ▼</h3>
+  <div id="cat-c" class="contenedor-jugadores categoria">
+
+  <div class="credencial">
+      <img src="portero.png" alt="N/A" />
+      <div class="info">
+        <h3>N/A</h3>
+        <p>Edad: N/A</p>
+        <p>Número: N/A</p>
+        <p class="portero">Posición: Portero</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 0</p>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Juvenil B -->
+<h3 class="titulo-categoria" onclick="toggleCategoria('d')">Juvenil B ▼</h3>
+<div id="cat-d" class="contenedor-jugadores categoria">
+
+  <div class="credencial">
+      <img src="portero.png" alt="N/A" />
+      <div class="info">
+        <h3>N/A</h3>
+        <p>Edad: N/A</p>
+        <p>Número: N/A</p>
+        <p class="portero">Posición: Portero</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 0</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Juvenil C -->
+<h3 class="titulo-categoria" onclick="toggleCategoria('e')">Juvenil C ▼</h3>
+<div id="cat-e" class="contenedor-jugadores categoria">
+
+  <div class="credencial">
+      <img src="portero.png" alt="N/A" />
+      <div class="info">
+        <h3>N/A</h3>
+        <p>Edad: N/A</p>
+        <p>Número: N/A</p>
+        <p class="portero">Posición: Portero</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 0</p>
+    </div>
+  </div>
+
+  <div class="credencial">
+      <img src="3id.jpg" alt="Jesús Alfredo Rosales López" />
+      <div class="info">
+        <h3>Jesús Alfredo Rosales López</h3>
+        <p>Edad: 16</p>
+        <p>Número: 3</p>
+        <p class="defensa">Posición: Defensa</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 14</p>
+    </div>
+  </div>
+
+  <div class="credencial">
+    <img src="6id.jpg" />
+    <div class="info">
+      <h3>Alexander Luna Carballo</h3>
+      <p>Edad: 16</p>
+      <p>Número: 6</p>
+      <p class="defensa">Posición: Defensa</p>
+      <p>Goles: 0</p>
+      <p>Asistencias: 0</p>
+      <p>Partidos: 13</p>
+    </div>
+  </div>
+
+    <div class="credencial">
+      <img src="223id.jpg" alt="Juan Rafael López Martínez" />
+      <div class="info">
+        <h3>Juan Rafael López Martínez</h3>
+        <p>Edad: 16</p>
+        <p>Número: 223</p>
+        <p class="defensa">Posición: Defensa</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 12</p>
+    </div>
+  </div>
+
+    <div class="credencial">
+      <img src="30id.jpg" alt="Jovani Alexander Jiménez González" />
+      <div class="info">
+        <h3>Jovani Alexander Jiménez González</h3>
+        <p>Edad: 16</p>
+        <p>Número: 30</p>
+        <p class="mediocampo">Posición: Mediocampista</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 13</p>
+    </div>
+  </div>
+
+    <div class="credencial">
+        <img src="5id.jpg" alt="Jonathan Torres Castro" />
+      <div class="info">
+        <h3>Jonathan Torres Castro</h3>
+        <p>Edad: 16</p>
+        <p>Número: 5</p>
+        <p class="delantero">Posición: Delantero</p>
+        <p>Goles: 0</p>
+        <p>Asistencias: 0</p>
+        <p>Partidos: 14</p>
+    </div>
+  </div>
+
+</section>
+
+  <section id="partidos">
+    <h2>Próximos partidos</h2>
+
+<div class="proximos-partidos">
+
+  <div class="partido">
+    <h4>Juvenil A</h4>
+    <img src="proximopartidojuva.jpg" alt="Partido Juvenil A">
+  </div>
+
+  <div class="partido">
+    <h4>Juvenil B</h4>
+    <img src="proximopartidojuvb.jpg" alt="Partido Juvenil B">
+  </div>
+
+  <div class="partido">
+    <h4>Juvenil C</h4>
+    <img src="proximopartidojuvc.jpg" alt="Partido Juvenil C">
+  </div>
+
+</div>
+  <h2>Jornadas (Juvenil C)</h2>
+  <ul>
+<li class="perdido">Jornada 2: Gaviotas 2 - 1 Deportivo Morin Jr</li>
+<li class="ganado">Jornada 3: Deportivo Morin Jr 3 - 0 Tecos Lazcar</li>
+<li class="perdido">Jornada 4: Deportivo Malibran 5 - 0 Deportivo Morin Jr</li>
+<li class="perdido">Jornada 5: Deportivo Morin Jr 0 - 4 Geofisica Jr</li>
+<li class="ganado">Jornada 6: Tiburones Blancos 0 - 1 Deportivo Morin Jr</li>
+<li class="perdido">Jornada 7: Deportivo Morin Jr 1 - 4 Real Tepeyac</li>
+<li class="perdido">Jornada 8: Inter Fausto Dávila 3 - 1 Deportivo Morin Jr</li>
+<li class="perdido">Jornada 9: Tecos Lazcar 1 - 0 Deportivo Morin Jr</li>
+<li class="perdido">Jornada 10: Deportivo Morin Jr 0 - 5 Gaviotas</li>
+<li class="ganado">Jornada 11: Deportivo Morin Jr 3 - 0 Deportivo Malibran</li>
+<li class="ganado">Jornada 12: Geofisica Jr 0 - 3 Deportivo Morin Jr</li>
+<li class="ganado">Jornada 13: Deportivo Morin Jr 3 (1) - (0) 3 Tiburones Blancos</li>
+<li class="perdido">Jornada 14: Deportivo Morin Jr 0 - 3 Real Tepeyac</li>
+<li class="ganado">Jornada 15: Deportivo Morin Jr - Inter Fausto Dávila</li>
+
+  </ul>
+
+    <h2>Clasificación S-17</h2>
+    <img src="clasificación.png" alt="Tabla de Posición" class="imagen-partidos">
+
+</section>
+
+<div class="galeria">
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Correo: <strong>diablosrojosdeveracruzfc@gmail.com</strong></p>
+<p>Facebook: 
+  <a href="https://www.facebook.com/profile.php?id=61573941421065" target="_blank">
+    @CLUB FC MORIN JR
+  </a>
+<p>Instagram: 
+  <a href="https://www.instagram.com/deportivomorin?igsh=bDU3dXJscjEwNXdm" target="_blank">
+    @deportivomorin
+  </a>
+</p>
+  <img src="inscripciones.jpg" alt="Inscripciones">
+</section>
+</div>
+
+<section id="galeria">
+  <h2>Galería</h2>
+  <h4>Diablos Rojos Temp. 2025-26</h4>
+  <div class="galeria">
+    <img src="fotoequipo.jpg" alt="Equipo completo">
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Deportivo Morin Jr</p>
+</footer>
+
+  </div>  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+<script>
+function toggleCategoria(cat) {
+  const elemento = document.getElementById("cat-" + cat);
+
+  if (elemento.classList.contains("active")) {
+    elemento.classList.remove("active");
+  } else {
+    elemento.classList.add("active");
+  }
+}
+</script>
+
+<script>
+function filtrarJugadores() {
+  let input = document.getElementById("buscador").value.toLowerCase();
+  let jugadores = document.querySelectorAll(".credencial");
+
+  jugadores.forEach(jugador => {
+    let nombre = jugador.innerText.toLowerCase();
+    jugador.style.display = nombre.includes(input) ? "block" : "none";
+  });
+}
+</script>
+
+<script>
+document.getElementById("totalJugadores").innerText =
+"Total jugadores: " + document.querySelectorAll(".credencial").length;
+</script>
+
+<script>
+setInterval(() => {
+  let ahora = new Date();
+  document.getElementById("reloj").innerText =
+  "Hora actual: " + ahora.toLocaleTimeString();
+}, 1000);
+</script>
+
+<script>
+let visitas = localStorage.getItem("visitas");
+
+if (!visitas) {
+  visitas = 1;
+} else {
+  visitas = parseInt(visitas) + 1;
+}
+
+localStorage.setItem("visitas", visitas);
+
+document.getElementById("contadorVisitas").innerText =
+"Visitas: " + visitas;
+</script>
+
+<script>
+function mostrarSeccion(id) {
+  document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+
+  // quitar activo de todos
+  document.querySelectorAll('nav a').forEach(link => link.classList.remove('activo'));
+
+  // agregar activo al seleccionado
+  event.target.classList.add('activo');
+}
+</script>
+<img src="morinjr.png" class="logo-flotante">
+</body>
+</html>
